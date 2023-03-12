@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var opearion_1 = require("./opearion");
+var operationProxy_1 = require("./operationProxy");
+console.log("====================START===================================>>");
+var obj = new operationProxy_1.OperaionProxy(new opearion_1.Operaion());
+console.log("Logging .....");
+console.log(obj.sub(30, 20));
+console.log("Event published...");
+console.log("=====================END=====================================>>>");
