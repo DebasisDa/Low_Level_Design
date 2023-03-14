@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var vehicle_factory_1 = require("./vehicle.factory");
+console.log("==========================START=============================>>>>>>>");
+var factoryObj = new vehicle_factory_1.vehicleFactory();
+var obj = factoryObj.getVehicleObject('CAR');
+console.log(obj.vehicleSeatCapacity());
+console.log(obj.vehicleTankCapacity());
+var obj2 = factoryObj.getVehicleObject('BIKE');
+console.log(obj2.vehicleSeatCapacity());
+console.log(obj2.vehicleTankCapacity());
+console.log("===========================END================================>>>>>");
